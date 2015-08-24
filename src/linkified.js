@@ -306,7 +306,7 @@ Linkified.linkifyNode = function (node) {
 				*/
 				children.push.apply(
 					children,
-					dummyElement.childNodes
+					Array.prototype.slice.call(dummyElement.childNodes)
 				);
 
 				// Clean up the dummy again?
